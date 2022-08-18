@@ -1,0 +1,121 @@
+<div class="col-12">
+    <div class="card card-w-title flex flex-wrap">
+        <div class="col-12 md:col-8 h-full">
+            <h5>TabMenu</h5>
+            <p-tabMenu styleClass="mb-5" [model]="routeItems"></p-tabMenu>
+
+            <body>
+                <h2 style="margin-top: 50px; text-align: center;">Metodo Cuadrado Medio</h2>
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                  <div style="display:inline; width: 370px; margin-right: 20px;">
+                    <div class="caja-gen">
+                      <form action="" style="text-align: left; margin-bottom: 20px;">
+                        <label for="semilla">Semilla</label><br>
+                        <input type="number" id="id-semilla" name="semilla"><br><br>
+                        <label for="dsig">Digitos Significativos</label><br>
+                        <input type="number" id="id-dsig" name="dsig" ><br><br>
+                        <label for="gen">Cuantos datos desea generar?</label><br>
+                        <input type="number" id="id-gen" name="gen" ><br><br>
+                        <button class="myButton" type="button" onclick="cargarDatos()">Generar</button>
+                      </form>
+                    </div>
+                  </div>
+                  <div style="display:inline; width: 540px;">
+                    <table id="t01" style="    width: 520px;" >
+                      <tr>
+                        <th id="tf-1" value="0">n</th>
+                        <th>R(n)</th>
+                        <th>R(n)<sup>2</sup></th>
+                        <th>M.R(n)<sup>2</sup></th>
+                      </tr>
+                    </table><br>
+                  </div>
+                </div>
+              <script src="js/controlador.js"></script>
+              </body>
+
+
+
+
+
+        </div>
+        <div class="col-12 md:col-4 mt-5 md:mt-0">
+           <!--
+<router-outlet></router-outlet>
+           -->
+        </div>
+    </div>
+</div>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  *:focus {
+    outline: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+
+  td{
+    border: 1px solid #d7d7d7;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #1359c4;
+    color: white;
+  }
+
+  input{
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: #cacaca;
+    margin-top: 3px;
+    padding-left: 8px;
+  }
+
+  .myButton {
+    background-color: #4564c7;
+      border-radius: 28px;
+      border: transparent;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 14px;
+      padding: 10px 25px;
+      text-decoration: none;
+
+  }
+
+  .myButton:hover {
+  	background-color:#2a58bd;
+  }
+
+  .caja-gen{
+    background-color: #ededed;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+</style>
+<link rel="shortcut icon" href="logo.png" />
+<title>MtCM</title>
+</head>
+
+</html>
