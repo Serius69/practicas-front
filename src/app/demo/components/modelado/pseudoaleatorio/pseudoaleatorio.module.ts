@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EmptyDemoRoutingModule } from './emptydemo-routing.module';
+import { EmptyDemoRoutingModule } from './pseudoaleatorio-routing.module';
 import { PseudoaleatorioComponent } from './pseudoaleatorio.component';
 import { PseudoaleatorioComponent2 } from './pseudoaleatorio2.component';
 import { PseudoaleatorioComponent3 } from './pseudoaleatorio3.component';
@@ -16,6 +16,16 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { ContextMenuModule } from 'primeng/contextmenu';
 import { StepsModule } from 'primeng/steps';
 import { InputTextModule } from 'primeng/inputtext';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { ToggleButtonModule } from 'primeng/togglebutton';
+import { RippleModule } from 'primeng/ripple';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { DropdownModule } from 'primeng/dropdown';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { ToastModule } from 'primeng/toast';
+import { SliderModule } from 'primeng/slider';
+import { RatingModule } from 'primeng/rating';
 
 @NgModule({
     imports: [
@@ -31,6 +41,17 @@ import { InputTextModule } from 'primeng/inputtext';
         ContextMenuModule,
         StepsModule,
         EmptyDemoRoutingModule,
+        TableModule,
+        RatingModule,
+        ButtonModule,
+        SliderModule,
+        InputTextModule,
+        ToggleButtonModule,
+        RippleModule,
+        MultiSelectModule,
+        DropdownModule,
+        ProgressBarModule,
+        ToastModule,
         RouterModule.forChild([
             {
                 path: '', component: PseudoaleatorioComponent, children: [
